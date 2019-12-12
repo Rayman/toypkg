@@ -15,6 +15,12 @@ catkin_package()
 ## Install ##
 #############
 
+catkin_install_python(
+  PROGRAMS
+    scripts/import-script
+    scripts/stand-alone-script
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
 #############
 ## Testing ##
 #############
